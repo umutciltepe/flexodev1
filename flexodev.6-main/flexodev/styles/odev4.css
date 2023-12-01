@@ -1,0 +1,93 @@
+:root{
+    --acik-siyah:#32363E;
+    --kapali-gri:#20232D;
+    --kapali-beyaz:#F4F6FA;
+    --beyaz:#FFFFFF;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--kapali-beyaz);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.kutu1{
+    width: 400px;
+    height: 150px;
+    background-color: var(--acik-siyah);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 25px;
+}
+.kutu1 > img{
+    flex: 0 0 40px;
+}
+.kutu1 > p{
+    flex: 0 0 300px;
+}
+.kutu1 > a{
+    flex: 0 0 80px;
+    text-decoration: none;
+    background-color: #20232D;
+    width: 80px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 3px;
+    color: var(--beyaz);
+}
+.kutu2{
+    width: 600px;
+    height: 200px;
+    background-color: var(--beyaz);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 10px;
+    border-radius: 25px;
+}
+.kutu2 > img{
+    min-height: 180px;
+    flex: 0 0 170px;
+}
+.kutu2 > p{
+    width: 300px;
+}
+.kutu2 > form{
+    width: 400px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+form > input[type=text]{
+    width: 250px;
+    height: 40px;
+    border: 1px solid rgb(188, 186, 186);
+    padding: 3px;
+}
+form > a{
+    width: 80px;
+    height: 35px;
+    background-color: var(--kapali-gri);
+    color: var(--beyaz);
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+}
